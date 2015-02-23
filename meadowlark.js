@@ -11,13 +11,11 @@ app.set('view engine', 'handlebars');
 app.set('port', process.env.PORT || 3000);
 
 app.get('/', function(req, res) {
-  res.type('text/plain');
-  res.send('Medowlark Travel');
+  res.render('home');
 });
 
 app.get('/about', function(req, res) {
-  res.type('text/plain');
-  res.send('About Meadowlark Travel');
+  res.render('about');
 });
 
 // custom 404 page
