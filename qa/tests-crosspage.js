@@ -35,7 +35,7 @@ suite('Cross-Page Tests', function () {
 			browser.visit('http://localhost:3000/tours/request-group-rate', function() {
 				assert(browser.field('referrer').value === '');
 				done();
-			})
+			});
 		}
 	);
 });
